@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54c2bb9b-c31a-4ed9-babb-8d9041de69b1" name="Changes" comment="" />
+    <list default="true" id="54c2bb9b-c31a-4ed9-babb-8d9041de69b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +19,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="minikube" />
@@ -56,7 +62,7 @@
       <workItem from="1733926945798" duration="1265000" />
       <workItem from="1734334577379" duration="7365000" />
       <workItem from="1734353376237" duration="150000" />
-      <workItem from="1734353558897" duration="4381000" />
+      <workItem from="1734353558897" duration="4785000" />
     </task>
     <servers />
   </component>
