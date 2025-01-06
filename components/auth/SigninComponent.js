@@ -1,10 +1,9 @@
-import {useEffect, useState} from 'react';
-import { signup, isAuth } from '../../actions/auth';
-import Router from 'next/router'
+import { useState, useEffect } from 'react';
+import { signin, authenticate, isAuth } from '../../actions/auth';
+import Router from 'next/router';
 
-const SignupComponent = () => {
+const SigninComponent = () => {
     const [values, setValues] = useState({
-        name: 'Ryan',
         email: 'ryan@gmail.com',
         password: 'rrrrrr',
         error: '',
@@ -13,7 +12,7 @@ const SignupComponent = () => {
         showForm: true
     });
 
-    const { name, email, password, error, loading, message, showForm } = values;
+    const { email, password, error, loading, message, showForm } = values;
 
     useEffect(() => {isAuth() && Router.push("/")}, [])
 
@@ -21,22 +20,24 @@ const SignupComponent = () => {
         e.preventDefault();
         // console.table({ name, email, password, error, loading, message, showForm });
         setValues({ ...values, loading: true, error: false });
-        const user = { name, email, password };
-        signup(user).then(data => {
-            console.log(data)
-            if (data != undefined) {
+        const user = { email, password };
+
+        signin(user).then(data => {
+            if (data.error) {
                 setValues({ ...values, error: data.error, loading: false });
             } else {
-                setValues({
-                    ...values,
-                    name: '',
-                    email: '',
-                    password: '',
-                    error: '',
-                    loading: false,
-                    message: data.message,
-                    showForm: false
-                });
+                // save user token to cookie
+                // save user info to localstorage
+                // authenticate user
+                authenticate(data, () => {
+                    console.log(isAuth())
+                    if(isAuth() && isAuth().role === 1){
+                        Router.push(`/admin`);
+                    }else {
+                        Router.push(`/user`);
+                    }
+
+                })
             }
         });
     };
@@ -49,19 +50,9 @@ const SignupComponent = () => {
     const showError = () => (error ? <div className="alert alert-danger">{error}</div> : '');
     const showMessage = () => (message ? <div className="alert alert-info">{message}</div> : '');
 
-    const signupForm = () => {
+    const signinForm = () => {
         return (
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <input
-                        value={name}
-                        onChange={handleChange('name')}
-                        type="text"
-                        className="form-control"
-                        placeholder="Type your name"
-                    />
-                </div>
-
                 <div className="form-group">
                     <input
                         value={email}
@@ -94,9 +85,9 @@ const SignupComponent = () => {
             {showError()}
             {showLoading()}
             {showMessage()}
-            {showForm && signupForm()}
+            {showForm && signinForm()}
         </React.Fragment>
     );
 };
 
-export default SignupComponent;
+export default SigninComponent;
