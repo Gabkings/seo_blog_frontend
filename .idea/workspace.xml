@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54c2bb9b-c31a-4ed9-babb-8d9041de69b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/actions/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/crud/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/crud/tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/admin/crud/category-tag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/crud/blogCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/quill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/admin/crud/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
@@ -94,7 +92,7 @@
       <workItem from="1736150770991" duration="10643000" />
       <workItem from="1736512817851" duration="687000" />
       <workItem from="1736760573749" duration="4416000" />
-      <workItem from="1736816534055" duration="614000" />
+      <workItem from="1736816534055" duration="14298000" />
     </task>
     <servers />
   </component>
