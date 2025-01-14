@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54c2bb9b-c31a-4ed9-babb-8d9041de69b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/auth/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/auth/Private.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/auth/SigninComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/admin/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/user/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/tag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/crud/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/crud/tag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/admin/crud/category-tag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/SignupComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/SignupComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabriel.gitonga/Desktop/AngularProjects/SEE_BLOG/frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabriel.gitonga/Desktop/AngularProjects/SEE_BLOG/frontend/pages/admin/crud&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,6 +57,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabriel.gitonga\Desktop\AngularProjects\SEE_BLOG\frontend\pages\admin\crud" />
       <recent name="C:\Users\gabriel.gitonga\Desktop\AngularProjects\SEE_BLOG\frontend\components" />
     </key>
   </component>
@@ -92,7 +91,10 @@
       <workItem from="1734417732298" duration="572000" />
       <workItem from="1734430585117" duration="3802000" />
       <workItem from="1735910532739" duration="656000" />
-      <workItem from="1736150770991" duration="7158000" />
+      <workItem from="1736150770991" duration="10643000" />
+      <workItem from="1736512817851" duration="687000" />
+      <workItem from="1736760573749" duration="4416000" />
+      <workItem from="1736816534055" duration="614000" />
     </task>
     <servers />
   </component>
