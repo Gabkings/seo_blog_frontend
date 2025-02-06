@@ -65,6 +65,11 @@ const Header = () => {
             {!isAuth() && (
                 <React.Fragment>
                   <NavItem>
+                    <Link href="/blogs">
+                      <NavLink>Blogs</NavLink>
+                    </Link>
+                  </NavItem>
+                  <NavItem>
                     <Link href="/signin">
                       <NavLink>Signin</NavLink>
                     </Link>
