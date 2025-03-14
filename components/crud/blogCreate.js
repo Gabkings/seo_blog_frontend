@@ -31,7 +31,6 @@ const CreateBlog = ({ router }) => {
     const [checkedTag, setCheckedTag] = useState([]); // tags
 
     const [body, setBody] = useState(blogFromLS());
-
     const [values, setValues] = useState({
         error: '',
         sizeError: '',
@@ -52,8 +51,7 @@ const CreateBlog = ({ router }) => {
 
     const initCategories = () => {
         getCategories().then(data => {
-            console.log("Cats " ,data)
-            if (data && data.error) {
+            if (data.error) {
                 setValues({ ...values, error: data.error });
             } else {
                 setCategories(data);
@@ -63,8 +61,7 @@ const CreateBlog = ({ router }) => {
 
     const initTags = () => {
         getTags().then(data => {
-            console.log("Tags ",data)
-            if (data && data.error) {
+            if (data.error) {
                 setValues({ ...values, error: data.error });
             } else {
                 setTags(data);
@@ -75,10 +72,8 @@ const CreateBlog = ({ router }) => {
     const publishBlog = e => {
         e.preventDefault();
         // console.log('ready to publishBlog');
-        console.log("Form data ", formData)
         createBlog(formData, token).then(data => {
-            console.log("Data ==> ",data)
-            if (data && data.error) {
+            if (data.error) {
                 setValues({ ...values, error: data.error });
             } else {
                 setValues({ ...values, title: '', error: '', success: `A new blog titled "${data.title}" is created` });
@@ -218,6 +213,7 @@ const CreateBlog = ({ router }) => {
                             <hr />
 
                             <small className="text-muted">Max size: 1mb</small>
+                            <br />
                             <label className="btn btn-outline-info">
                                 Upload featured image
                                 <input onChange={handleChange('photo')} type="file" accept="image/*" hidden />
@@ -240,5 +236,6 @@ const CreateBlog = ({ router }) => {
         </div>
     );
 };
+
 
 export default withRouter(CreateBlog);

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54c2bb9b-c31a-4ed9-babb-8d9041de69b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/blog/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/blogs/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/blog/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/blog/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/crud/blogCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/crud/blogCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blogs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +56,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="frontend" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="frontend" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,7 +86,9 @@
       <workItem from="1736512817851" duration="687000" />
       <workItem from="1736760573749" duration="4416000" />
       <workItem from="1736816534055" duration="14953000" />
-      <workItem from="1738853393570" duration="3356000" />
+      <workItem from="1738853393570" duration="3547000" />
+      <workItem from="1739284893864" duration="4490000" />
+      <workItem from="1739366656882" duration="4364000" />
     </task>
     <servers />
   </component>
