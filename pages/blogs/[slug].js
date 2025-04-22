@@ -95,9 +95,13 @@ const SingleBlog = ({ blog, query }) => {
                             <section>
                                 <div className="container">
                                 <h5 className="pb-3 pt-3 text-center">{blog.title}</h5>
-                                <p className="lead mt-3 mark">
-                                    Written by {blog.postedBy.name} | Published {moment(blog.updatedAt).fromNow()}
-                                </p>
+                                    <p className="lead mt-3 mark">
+                                        Written by{' '}
+                                        <Link href={`/profile/${blog.postedBy.username}`}>
+                                            <a>{blog.postedBy.name}</a>
+                                        </Link>{' '}
+                                        | Published {moment(blog.updatedAt).fromNow()}
+                                    </p>
 
                                 <div className="pb-3">
                                     {showBlogCategories(blog)}

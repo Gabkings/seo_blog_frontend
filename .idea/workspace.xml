@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54c2bb9b-c31a-4ed9-babb-8d9041de69b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/blog/SmallCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/crud/BlogRead.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/crud/BlogUpdate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/admin/crud/[slug].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/admin/crud/blogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/blogs/[slug].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/seoblog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/ProfileUpdate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/blog/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/categories/[slug].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/profile/[username].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/tags/[slug].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/user/update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blogs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/blog/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/blog/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/blog/SmallCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/blog/SmallCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/crud/BlogUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/crud/BlogUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blogs/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +38,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -54,7 +58,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gabriel.Gitonga/Desktop/AngularProjects/SEE_BLOG/frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gabriel.Gitonga/Desktop/smart/Abacus/abacus&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -120,7 +124,10 @@
       <workItem from="1741942776974" duration="2908000" />
       <workItem from="1742475165653" duration="3097000" />
       <workItem from="1742569344542" duration="7343000" />
-      <workItem from="1742805261620" duration="18417000" />
+      <workItem from="1742805261620" duration="22332000" />
+      <workItem from="1743661751059" duration="1274000" />
+      <workItem from="1744176582385" duration="9606000" />
+      <workItem from="1745304578718" duration="7652000" />
     </task>
     <servers />
   </component>
