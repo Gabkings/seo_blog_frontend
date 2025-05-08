@@ -1,6 +1,21 @@
 import fetch from 'isomorphic-fetch';
 import { API } from '../config';
 import cookie from 'js-cookie'
+import Router from "next/router";
+
+export const handleResponse = response => {
+    if (response.status === 401) {
+        signout(() => {
+            Router.push({
+                pathname: '/signin',
+                query: {
+                    message: 'Your session is expired. Please signin'
+                }
+            });
+        });
+    }
+};
+
 
 export const signup = user => {
     console.log("User received")
@@ -102,3 +117,17 @@ export const isAuth = () => {
         }
     }
 }
+
+export const updateUser = (user, next) => {
+    if (process.browser) {
+        if (localStorage.getItem('user')) {
+            let auth = JSON.parse(localStorage.getItem('user'));
+            auth = user;
+            localStorage.setItem('user', JSON.stringify(auth));
+            next();
+        }
+    }
+};
+
+
+

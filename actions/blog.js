@@ -1,8 +1,18 @@
 import fetch from 'isomorphic-fetch';
 import { API } from '../config';
 import queryString from 'query-string';
+import {handleResponse, isAuth} from "./auth";
+
 export const createBlog = (blog, token) => {
-    return fetch(`${API}/api/blog`, {
+    let createBlogEndpoint;
+
+    if (isAuth() && isAuth().role === 1) {
+        createBlogEndpoint = `${API}/api/blog`;
+    } else if (isAuth() && isAuth().role === 0) {
+        createBlogEndpoint = `${API}/api/user/blog`;
+    }
+
+    return fetch(`${createBlogEndpoint}`, {
         method: 'POST',
         headers: {
             Accept: 'application/json',
@@ -64,8 +74,16 @@ export const listRelated = blog => {
 };
 
 
-export const list = () => {
-    return fetch(`${API}/api/blogs`, {
+export const list = username => {
+    let listBlogsEndpoint;
+
+    if (username) {
+        listBlogsEndpoint = `${API}/api/${username}/blogs`;
+    } else {
+        listBlogsEndpoint = `${API}/api/blogs`;
+    }
+
+    return fetch(`${listBlogsEndpoint}`, {
         method: 'GET'
     })
         .then(response => {
@@ -75,7 +93,15 @@ export const list = () => {
 };
 
 export const removeBlog = (slug, token) => {
-    return fetch(`${API}/api/blog/${slug}`, {
+    let deleteBlogEndpoint;
+
+    if (isAuth() && isAuth().role === 1) {
+        deleteBlogEndpoint = `${API}/api/blog/${slug}`;
+    } else if (isAuth() && isAuth().role === 0) {
+        deleteBlogEndpoint = `${API}/api/user/blog/${slug}`;
+    }
+
+    return fetch(`${deleteBlogEndpoint}`, {
         method: 'DELETE',
         headers: {
             Accept: 'application/json',
@@ -90,7 +116,15 @@ export const removeBlog = (slug, token) => {
 };
 
 export const updateBlog = (blog, token, slug) => {
-    return fetch(`${API}/api/blog/${slug}`, {
+    let updateBlogEndpoint;
+
+    if (isAuth() && isAuth().role === 1) {
+        updateBlogEndpoint = `${API}/api/blog/${slug}`;
+    } else if (isAuth() && isAuth().role === 0) {
+        updateBlogEndpoint = `${API}/api/user/blog/${slug}`;
+    }
+
+    return fetch(`${updateBlogEndpoint}`, {
         method: 'PUT',
         headers: {
             Accept: 'application/json',
@@ -99,6 +133,7 @@ export const updateBlog = (blog, token, slug) => {
         body: blog
     })
         .then(response => {
+            handleResponse(response);
             return response.json();
         })
         .catch(err => console.log(err));
