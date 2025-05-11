@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54c2bb9b-c31a-4ed9-babb-8d9041de69b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/DisqusThread.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/user/crud/[slug].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/user/crud/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/user/crud/blogs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/ProfileUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/ProfileUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/crud/BlogRead.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/crud/BlogRead.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blogs/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blogs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogs/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +118,7 @@
       <workItem from="1745966836682" duration="2933000" />
       <workItem from="1746424554796" duration="1215000" />
       <workItem from="1746433368342" duration="14087000" />
+      <workItem from="1746890268448" duration="3701000" />
     </task>
     <servers />
   </component>
