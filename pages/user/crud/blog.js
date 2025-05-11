@@ -1,6 +1,6 @@
 import Layout from '../../../components/Layout';
 import Private from '../../../components/auth/Private';
-import BlogCreate from '../../../components/crud/blogCreate';
+import BlogCreate from '../../../components/crud/BlogCreate';
 import Link from 'next/link';
 
 const CreateBlog = () => {
